@@ -7,12 +7,11 @@ Once downloaded the project, you have to create your model for hunpos component.
   ```
   ./hunpos-train italian_model < train
   ```
-  
 * Step 2 - Install Node JS
-Download Node JS for your OS from https://nodejs.org/en/download/
+  * Download Node JS for your OS from https://nodejs.org/en/download/
 
-* Step 3 -  Download all the needed libraries 
-Go to the project's main directory and use these commands to downloads the libraries needed to execute the project:
+* Step 3 -  Download all the needed libraries
+  * Go to the project's main directory and use these commands to downloads the libraries needed to execute the project:
   ```
   npm install --save firebase-admin
   ```
@@ -24,9 +23,9 @@ Go to the project's main directory and use these commands to downloads the libra
   ```
 
 * Step 4 -  Run the project local server
-Open the terminal at the project's main directory and use this command to run the project local server
+  * Open the terminal at the project's main directory and use this command to run the project local server
   ```
   node index.js
   ```
 * Step 5 -  Use coletta's prototype!
-Open your browser and go to http://localhost:8080/insert
+  * Open your browser and go to http://localhost:8080/insert
