@@ -10,7 +10,7 @@ class FirebaseAdapter extends DatabaseManager {
         this.sentences=0;
         this.database.ref('data/sentences').on("value", snap => {
             this.sentences=snap.numChildren();
-            console.log("inizio key: "+this.sentences);
+            //console.log("inizio key: "+this.sentences);
         });
     }
 
