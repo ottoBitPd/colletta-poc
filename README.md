@@ -1,6 +1,6 @@
 # How to use our prototype
 This project needs to be executed in local.
-* Step 1 - Donwoload our project
+* Step 1 - Download our project
   <br/>Download the branch that corresponds to your OS
   
 * Step 2 - Install Node JS
