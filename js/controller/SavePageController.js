@@ -16,7 +16,7 @@ class SavePageController extends PageController{
 
             //building a array merging tags coming from user corrections and hunpos solution
             var finalTags = this.correctsHunpos(hunposTags,tagsCorrection);
-            console.log("finalTags: "+finalTags);
+
             //saving in the database the final solution for the exercise
             this.model.writeSolution(sentence.split(" "), finalTags, sentence, key);
             response.send(this.view.getPage());

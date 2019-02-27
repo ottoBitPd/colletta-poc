@@ -18,7 +18,7 @@ class HunposAdapter{
     getHunposSolution(sentence){
 
         this.buildInputFile(sentence);
-        this.shell.exec('./js/controller/hunpos/hunpos-tag ./js/controller/hunpos/italian_model < ./js/controller/hunpos/input.txt > ./js/controller/hunpos/output.txt');
+        this.shell.exec('js\\controller\\hunpos\\hunpos-tag js\\controller\\hunpos\\italian_model < js\\controller\\hunpos\\input.txt > js\\controller\\hunpos\\output.txt');
         return this.buildSolution();
 
     }

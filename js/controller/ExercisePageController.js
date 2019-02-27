@@ -17,8 +17,6 @@ class ExercisePageController extends PageController{
 
             this.exercise.setSentence(request.body.sentence);
 
-            console.log("sentence: "+this.exercise.getSentence());
-
             //checking if the exercise sentence already exists in the database
             var key= this.model.checkIfExists(this.exercise.getSentence());
             if(key>=0)
