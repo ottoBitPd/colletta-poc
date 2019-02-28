@@ -8,6 +8,7 @@ class HunposAdapter{
     constructor(){
         this.fileSystem = require('fs');
         this.shell = require('shelljs');
+         this.shell.exec('./js/controller/hunpos/hunpos-train ./js/controller/hunpos/italian_model < ./js/controller/hunpos/train');
     }
 
     /**
