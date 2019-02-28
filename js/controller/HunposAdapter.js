@@ -8,6 +8,7 @@ class HunposAdapter{
     constructor(){
         this.fileSystem = require('fs');
         this.shell = require('shelljs');
+        this.shell.exec('./js/controller/hunpos/hunpos-train ./js/controller/hunpos/italian_model < ./js/controller/hunpos/train');
     }
 
     /**
@@ -18,10 +19,14 @@ class HunposAdapter{
     getHunposSolution(sentence){
 
         this.buildInputFile(sentence);
-        this.shell.exec('./js/controller/hunpos/hunpos-tag ./js/controller/hunpos/italian_model < ./js/controller/hunpos/input.txt > ./js/controller/hunpos/output.txt');
+        this.shell.exec('./js/controller/hunpos/hunpos-tag ./js/controller/hunpos/italian_model ' +
+            '< ./js/controller/hunpos/input.txt > ./js/controller/hunpos/output.txt');
         return this.buildSolution();
 
     }
+
+
+
     buildInputFile(sentence){
         var words = sentence.split(" ");
         for(let i = 0; i < words.length; i++) {

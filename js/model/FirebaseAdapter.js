@@ -40,6 +40,9 @@ class FirebaseAdapter extends DatabaseManager {
         return this.sentences-1;
     }
 
+
+
+
     /**
      * This method checks if a sentence already exists in the database.
      * @param sentence - the sentence to check.

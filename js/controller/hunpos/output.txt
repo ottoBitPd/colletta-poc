@@ -1,9 +1,6 @@
-Ohi	SP	
-Ohi	SP	
-Ohi	SP	
-vale	Vip3s	
-rossi	Amp	
-vinci	Smp	
-per	E	
-noi	PE1np	
+La	RDfs	
+vecchia	Afs	
+legge	Sfs	
+la	RDfs	
+regola	Sfs	
 
