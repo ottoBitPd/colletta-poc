@@ -1,0 +1,62 @@
+{
+  "name": "colletta",
+  "scripts": {
+    "lint": "tslint --project tsconfig.json",
+    "build": "tsc --outDir public",
+    "test": "nyc --reporter=html --reporter=text mocha -r ts-node/register test/**/*.ts",
+    "start": "npm run shell",
+    "cyclomatic": "cr public/ -o cyclomatic-report.txt"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  },
+  "main": "public/index.js",
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "escomplex": "^2.0.0-alpha",
+    "express-session": "^1.15.6",
+    "firebase": "^5.9.1",
+    "firebase-admin": "^7.0.0",
+    "mocha-sonar-reporter": "^0.1.6",
+    "morgan": "^1.9.1",
+    "nodejs": "0.0.0",
+    "session-file-store": "^1.2.0",
+    "shelljs": "^0.8.3",
+    "sonarqube-scanner": "^2.4.0",
+    "ts-complex": "^1.0.0",
+    "ts-complexity": "0.0.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "chai": "^4.2.0",
+    "complexity-report": "^2.0.0-alpha",
+    "express": "^4.16.4",
+    "mocha": "^6.1.2",
+    "mocha-sonarqube-reporter": "^1.0.1",
+    "sonar-scanner": "^3.1.0",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2",
+    "typings": "^2.1.1"
+  },
+  "private": true
+}

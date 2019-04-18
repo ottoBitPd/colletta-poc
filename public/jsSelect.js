@@ -274,7 +274,7 @@ function tempo(i){
             break;
         default:
             show("persona"+i);
-            show("genere"+i);
+            hide("genere"+i);//modificato
             show("numero"+i);
             break;
     }

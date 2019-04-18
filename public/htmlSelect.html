@@ -1,4 +1,4 @@
-<select name="general*i*" id="general*i*" onchange="general(*i*)">>
+<select class="form-control" name="general*i*" id="general*i*" onchange="general(*i*)">>
     <option value="-">Scegli una correzione</option>
     <option value="A">Aggettivo</option>
     <option value="B">Avverbio</option>
@@ -13,8 +13,9 @@
     <option value="X">Altro</option>
 </select>
 <!--secondo liv aggettivo-->
-<select name="aggettivo*i*" id="aggettivo*i*" onchange="aggettivo(*i*)">
-    <option value="-">Scegli una correzione OBB</option>
+<select class="form-control" name="aggettivo*i*" id="aggettivo*i*" onchange="aggettivo(*i*)">
+    <option value="-">Scegli una correzione</option>
+    <option value="A">Aggettivo qualificativo</option>
     <option value="AP">Aggettivo d. possesivo</option>
     <option value="DD">Aggettivo d. dimostrativo</option>
     <option value="DI">Aggettivo d. indefinito</option>
@@ -25,24 +26,24 @@
     <!--DR Determinante Relativo non so cosa sia forse avverbio-->
 </select>
 <!--secondo liv avverbio-->
-<select name="avverbio*i*" id="avverbio*i*">
-    <option value="-">Scegli un avverbio specifico OBB</option>
+<select class="form-control" name="avverbio*i*" id="avverbio*i*">
+    <option value="-">Scegli un avverbio specifico *</option>
     <option value="B">Avverbio</option>
     <option value="BN">Avverbio di negazione</option>
 </select>
-<select name="congiunzione*i*" id="congiunzione*i*">
-    <option value="-">Scegli una congiunzione specifica</option>
-    <option value="CC">Congiunzione coordinante</option>
-    <option value="CS">Congiunzione subordinante</option>
+<select class="form-control" name="congiunzione*i*" id="congiunzione*i*">
+    <option value="-">Scegli una congiunzione specifica *</option>
+    <option value="C">Congiunzione coordinante</option>
+    <option value="S">Congiunzione subordinante</option>
     <!--non so se queste CS vanno a sostituire gli avverbi-->
 </select>
-<select name="preposizione*i*" id="preposizione*i*">
-    <option value="-">Scegli una correzione OBB</option>
+<select class="form-control" name="preposizione*i*" id="preposizione*i*">
+    <option value="-">Scegli una correzione *</option>
     <option value="E">Preposizione semplice</option>
     <option value="EA">Preposizione articolata</option>
 
 </select>
-<select name="punteggiatura*i*" id="punteggiatura*i*">
+<select class="form-control" name="punteggiatura*i*" id="punteggiatura*i*">
     <option value="-">Scegli una punteggiatura specifica</option>
     <option value="FB">Punteggiatura bilanciata</option>
     <option value="FC">Punteggiatura fine clausola</option>
@@ -51,7 +52,7 @@
 
 </select>
 <!--secondo liv pronome-->
-<select name="pronome*i*" id="pronome*i*" onchange="pronome(*i*)">
+<select class="form-control" name="pronome*i*" id="pronome*i*" onchange="pronome(*i*)">
     <option value="-">Scegli una correzione</option>
     <option value="PE">Pronome personale</option>
     <option value="PP">Pronome possessivo</option>
@@ -67,28 +68,28 @@
     -->
 </select>
 <!--secondo liv articolo-->
-<select name="articolo*i*" id="articolo*i*">
-    <option value="-">Scegli un articolo specifico</option>
-    <option value="RD">Articolo determinativo</option>
-    <option value="RI">Articolo indeterminativo</option>
+<select class="form-control" name="articolo*i*" id="articolo*i*">
+    <option value="-">Scegli un articolo specifico *</option>
+    <option value="D">Articolo determinativo</option>
+    <option value="I">Articolo indeterminativo</option>
 </select>
 <!--secondo liv nome-->
-<select name="nome*i*" id="nome*i*" onchange="nome(*i*)">
-    <option value="-">Scegli una correzione OBB</option>
+<select class="form-control" name="nome*i*" id="nome*i*" onchange="nome(*i*)">
+    <option value="-">Scegli una correzione *</option>
     <option value="S">Nome comune</option>
     <option value="SP">Nome proprio</option>
     <option value="SA">Abbreviazione</option>
     <!--ci potrebbe stare qui l'abbreviazione SA-->
 </select>
 
-<select name="verbo*i*" id="verbo*i*" onchange="verbo(*i*)">
-    <option value="-">Scegli tipo verbo OBB</option>
+<select class="form-control" name="verbo*i*" id="verbo*i*" onchange="verbo(*i*)">
+    <option value="-">Scegli tipo verbo *</option>
     <option value="V">principale</option>
     <option value="VA">ausiliario</option>
     <option value="VM">modale</option>
 </select>
 
-<select name="tempo*i*" id="tempo*i*" onchange="tempo(*i*)">
+<select class="form-control" name="tempo*i*" id="tempo*i*" onchange="tempo(*i*)">
     <option value="-">Scegli tempo verbo</option>
     <option value="ip">indicativo presente</option>
     <option value="ii">indicativo imperfetto</option>
@@ -103,19 +104,19 @@
     <option id="pp" value="pp">participio presente</option>
     <option value="ps">participio passato</option>
 </select>
-<select name="persona*i*" id="persona*i*">
+<select class="form-control" name="persona*i*" id="persona*i*">
     <option value="-">Scegli persona</option>
     <option value="1">prima</option>
     <option value="2">seconda</option>
     <option value="3">terza</option>
 </select>
-<select name="genere*i*" id="genere*i*">
+<select class="form-control" name="genere*i*" id="genere*i*">
     <option value="-">Scegli genere</option>
     <option value="m">maschile</option>
     <option value="f">femminile</option>
     <option value="n">non specificato</option>
 </select>
-<select name="numero*i*" id="numero*i*">
+<select class="form-control" name="numero*i*" id="numero*i*">
     <option value="-">Scegli numero</option>
     <option value="s">singolare</option>
     <option value="p">plurale</option>
