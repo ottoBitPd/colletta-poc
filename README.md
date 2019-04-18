@@ -1,7 +1,7 @@
 ## How to use our product
 This project is designed to be executed in a Linux server.
 * Step 1 - Donwoload our project
-  <br/>Download the product branch
+  <br/>Download the **product branch**
   
 * Step 2 - Install Node JS
   <br/>Download Node JS for your OS from https://nodejs.org/en/download/
